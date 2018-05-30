@@ -1,5 +1,282 @@
-div{
-  background: yellow;
-  width: 100px;
+.header_wrap {
+  background-image: url(/img/football.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 700px;
+  position: relative;
+
+  @media screen and (min-width: 425px) and (max-width: 768px) {
+    height: 400px;
+  }
+
+  @media screen and (min-width: 768px) {
+    height: 500px;
+  }
+  @media screen and (min-width: 1024px) {
+    height: 750px;
+  }
+  @media screen and (min-width: 320px) and (max-width: 425px) {
+    height: 370px;
+  }
+}
+
+.Headerlogo {
+  width: 190px;
   height: 100px;
+  background-image: url(/img/logo.png);
+  background-repeat: no-repeat;
+  -webkit-background-size: contain;
+  background-size: contain;
+  background-position: bottom;
+  position: relative;
+  margin-left: 100px;
+  @media screen and (max-width: 768px) {
+    height: 50px;
+    margin-left: 50px;
+    width: 100px;
+  }
+
+  @media screen and (min-width: 320px) and (max-width: 425px) {
+    width: 70px;
+    height: 30px;
+    margin-left: 10px;
+  }
+}
+
+.header_right_text {
+  color: white;
+  float: right;
+  font-size: 10pt;
+  margin-top: -50px;
+  margin-right: 50px;
+  font-family: 'ProximaNova-Light';
+  @media screen and (max-width: 768px) {
+    margin-top: -10px;
+    font-size: 7pt;
+    width: 100px;
+    margin-right: 0px;
+  }
+  @media screen and (min-width: 320px) and (max-width: 425px) {
+    font-size: 5pt;
+
+  }
+}
+
+.header_center_box {
+  position: relative;
+  margin: auto;
+  z-index: 100;
+  width: 1200px;
+  height: 200px;
+  //border: 1px solid white;
+  margin-top: 200px;
+  @media screen and (min-width: 1440px) and (max-width: 1920px) {
+    width: 1200px;
+  }
+  @media screen and (min-width: 1024px) and (max-width: 1440px) {
+    width: 800px;
+    margin-top: 150px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    width: 700px;
+    margin-top: 50px;
+    height: 150px;
+  }
+  @media screen and (min-width: 600px) and (max-width: 768px) {
+    width: 500px;
+    margin-top: 20px;
+    height: 150px;
+  }
+  @media screen and (min-width: 425px) and (max-width: 600px) {
+    width: 400px;
+    margin-top: 20px;
+    height: 100px;
+  }
+  @media screen and (min-width: 320px) and (max-width: 425px) {
+    width: 300px;
+    margin-top: 40px;
+    height: 100px;
+  }
+}
+
+.header_first_main_text,
+.header_first_second_text {
+  font-family: 'ProximaNova-Bold';
+  color: white;
+  font-size: 61pt;
+
+  @media screen and (max-width: 1440px) {
+    font-size: 41pt;
+  }
+  @media screen and (max-width: 768px) {
+    font-size: 31pt;
+  }
+  @media screen and (min-width: 425px) and (max-width: 600px) {
+    font-size: 21pt;
+  }
+  @media screen and (min-width: 320px) and (max-width: 425px) {
+    font-size: 16pt;
+  }
+}
+
+.header_first_main_text {
+  z-index: 15;
+  float: left;
+  position: relative;
+}
+
+.header_first_second_text {
+  z-index: 10;
+  float: right;
+}
+
+.line {
+  position: absolute;
+  width: 430px;
+  height: 5px;
+  background: #5e42b0;
+  z-index: 11;
+  margin-left: 250px;
+  margin-top: 70px;
+  transform: rotate(-45deg);
+  @media screen and (min-width: 1440px) and (max-width: 1920px) {
+    margin-left: 50px;
+  }
+  @media screen and (min-width: 1024px) and (max-width: 1440px) {
+    width: 300px;
+    margin-left: 150px;
+  }
+  @media screen and (min-width: 600px) and (max-width: 1024px) {
+    width: 250px;
+    margin-left: 150px;
+  }
+  @media screen and (min-width: 425px) and (max-width: 600px) {
+    width: 170px;
+    margin-top: 40px;
+    margin-left: 70px;
+  }
+  @media screen and (min-width: 320px) and (max-width: 425px) {
+    margin-left: 50px;
+    width: 150px;
+    margin-top: 30px;
+  }
+
+}
+
+.header_nav {
+  position: relative;
+  clear: both;
+  float: right;
+  z-index: 15;
+  margin-top: 10px;
+  .nav_item {
+    font-family: 'ProximaNova-Light';
+    display: inline-block;
+    font-size: 21px;
+    color: #fff;
+    margin-left: 20px;
+    cursor: pointer;
+    @media screen and (min-width: 600px) and (max-width: 768px) {
+      font-size: 11pt;
+    }
+    @media screen and (min-width: 425px) and (max-width: 600px) {
+      font-size: 7pt;
+    }
+    @media screen and (min-width: 320px) and (max-width: 425px) {
+      font-size: 6pt;
+    }
+  }
+}
+
+.box_button {
+  width: 700px;
+  //border: 1px solid white;
+  margin: auto;
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+  @media screen and (min-width: 1024px) {
+    margin-top: 100px;
+  }
+  @media screen and (min-width: 600px) and (max-width: 768px) {
+    margin-top: 50px;
+    width: 550px;
+  }
+
+  @media screen and (min-width: 425px) and (max-width: 600px) {
+    margin-top: 50px;
+    width: 400px;
+  }
+  @media screen and (min-width: 320px) and (max-width: 425px) {
+  flex-direction: column;
+    border: 1px solid white;
+    width: 250px;
+    margin-top: 10px;
+  }
+  .button {
+    width: 300px;
+    height: 80px;
+    border-radius: 50px;
+    background: #fff;
+    background: #5e42b0;
+    border: none;
+    cursor: pointer;
+    @media screen and (min-width: 600px) and (max-width: 768px) {
+      width: 250px;
+      height: 70px;
+    }
+    @media screen and (min-width: 425px) and (max-width: 600px) {
+      width: 190px;
+      margin-top: 20px;
+      height: 60px;
+    }
+    @media screen and (min-width: 320px) and (max-width: 425px) {
+      width: 190px;
+      margin-top: 20px;
+      height: 60px;
+      margin: auto;
+      margin-top: 10px;
+    }
+
+    p {
+      margin-left: 80px;
+      text-align: left;
+      line-height: 20px;
+      font-size: 12pt;
+      color: #fff;
+      font-family: 'ProximaNova-Bold';
+      @media screen and (min-width: 425px) and (max-width: 600px) {
+        font-size: 8pt;
+      }
+      @media screen and (min-width: 320px) and (max-width: 425px) {
+        font-size: 7pt;
+      }
+    }
+    .button_top_text {
+      margin-top: 8px;
+      font-family: 'ProximaNova-Light';
+    }
+  }
+}
+
+.fab {
+  float: left;
+  margin-left: 21px;
+  color: #fff;
+}
+
+.icon_hidden {
+  display: none;
+  @media screen and (min-width: 320px) and (max-width: 768px) {
+    display: block;
+  }
+}
+
+.icon {
+  display: block;
+  margin-top: 5px;
+  @media screen and (min-width: 320px) and (max-width: 768px) {
+    display: none;
+  }
 }
